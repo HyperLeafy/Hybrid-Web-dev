@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: aliceblue;
+                text-align: center;
+            }
+
+            h2{
+                color: #8249A6;
+                font-family: monospace;
+                font-size: 28px;
+                text-decoration: underline;
+            }
+
+            form{
+                text-align: left;
+                font-size: 18px;
+                padding: 5px;
+                border: 1px solid #61347D;
+            }
+
+            table,tr,th{
+                border: 1px solid #61347D;
+                padding: 5px;
+                column-gap: 5px;
+            }
+
+            th{
+                background-color: rgba(240, 128, 128, 0.226);
+            }
+
+            button{
+                font-size: 16px;
+                font-weight: 700;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Grocery Store</h2>
+        <p></p>
+        <form>
+            Enter product name : <input id="d1" type="text"><br>
+            Enter product price : <input id="d2" type="text"><br>
+            Enter quantity : <input id="d3" type="number"><br>
+            Enter product code: <input id="d4" type="text"><br>
+            <button type="button" onclick="toTable()">sumbit</button>
+        </form>
+        <table id="table">
+            <tr>
+                <th>Name</th>
+                <th>Code</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total price</th>
+            </tr>
+        </table>
+        <script>
+            function toTable(){
+                var table = document.getElementById("table")
+                var row = table.insertRow(1);
+                var name = row.insertCell(0);
+                var code = row.insertCell(1);
+                var price = row.insertCell(2);
+                var quantity = row.insertCell(3);
+                var tprice = row.insertCell(4);
+                var a = document.getElementById("d2").value;
+                var b = document.getElementById("d3").value;
+
+                name.innerHTML = document.getElementById("d1").value;
+                code.innerHTML = document.getElementById("d4").value;
+                price.innerHTML = document.getElementById("d2").value; 
+                quantity.innerHTML = document.getElementById("d3").value; 
+                tprice.innerHTML = a*b;  
+                alert("Total Price : "+a*b)
+            }
+        </script>
+    </body>
+</html>

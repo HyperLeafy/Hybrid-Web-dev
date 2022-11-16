@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Assignment 7</title>
+        <script>
+            function fun(){
+                a=document.getElementById("in1").value;
+                switch(a%3){
+                    case 0:
+                    document.getElementById("1").innerHTML="Divisible";
+                    break;
+                    default:
+                    document.getElementById("1").innerHTML="NOT Divisible";
+
+                }
+                switch(a%4){
+                    case 0:
+                    document.getElementById("2").innerHTML="Divisible";
+                    break;
+                    default:
+                    document.getElementById("2").innerHTML="NOT Divisible";
+
+                }
+                switch(a%5){
+                    case 0:
+                    document.getElementById("3").innerHTML="Divisible";
+                    break;
+                    default:
+                    document.getElementById("3").innerHTML="NOT Divisible";
+
+                }
+                switch(a%6){
+                    case 0:
+                    document.getElementById("4").innerHTML="Divisible";
+                    break;
+                    default:
+                    document.getElementById("4").innerHTML="NOT Divisible";
+
+                }
+                switch(a%7){
+                    case 0:
+                    document.getElementById("5").innerHTML="Divisible";
+                    break;
+                    default:
+                    document.getElementById("5").innerHTML="NOT Divisible";
+
+                }
+                switch(a%8){
+                    case 0:
+                    document.getElementById("6").innerHTML="Divisible";
+                    break;
+                    default:
+                    document.getElementById("6").innerHTML="NOT Divisible";
+
+                }
+                switch(a%9){
+                    case 0:
+                    document.getElementById("7").innerHTML="Divisible";
+                    break;
+                    default:
+                    document.getElementById("7").innerHTML="NOT Divisible";
+
+                }
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1>Asssignment 7 Question3</h1><br>
+        <label for="in1"> Enter the number which you want to check divisibility with 3,4,5,6,7,8 & 9</label><br><br>
+        <input type="text" id="in1" placeholder="Number"><br><br> 
+        <button onclick="fun()">Check</button><br><hr><br>
+
+        <div> By 3 : <span id="1"></span></div><br>
+        <div> By 4 : <span id="2"></span></div><br>
+        <div> By 5 : <span id="3"></span></div><br>
+        <div> By 6 : <span id="4"></span></div><br>
+        <div> By 7 : <span id="5"></span></div><br>
+        <div> By 8 : <span id="6"></span></div><br>
+        <div> By 7 : <span id="7"></span></div><br>
+
+    </body>
+
+</html>

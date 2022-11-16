@@ -1,0 +1,68 @@
+<head>
+    <style>
+        hr{
+            border: 2px solid bisque
+        }
+
+        body{
+            background-color:aliceblue
+        }
+    </style>
+</head>
+
+
+
+<body>
+<!--
+    <p id="d1">paragraph 1</p>
+    <p id="d2">paragraph 2</p>
+
+    <hr>
+    <p id="b1">Date</p>
+    <button onclick="display()">Clcik me</button>
+    
+    <hr>
+    <p id="c1"></p>
+    <button onclick="display()">clcik me</button>
+
+    <script>
+        const p1 = {name:"", lastname:""};
+        const p2 = {name:"valadmir", lastname:"putin",fullName:function(){return p2.name+" "+p2.lastname;}}
+        document.getElementById("d2").innerHTML=p2.fullName()
+        document.getElementById("d1").innerHTML=p2.fullName()
+
+
+        function display(){
+            document.getElementById("b1").innerHTML=Date()
+        } 
+    </script>
+    <script>
+        function display(){
+            const person={name:"Elon", lastname:"Musk", age: 51, profession:"Entrepreneur", fullName:function(){person.name+" "+person.lastname}}
+            document.getElementById("c1").innerHTML=person.fullName()
+        }
+    </script>
+-->
+<hr>
+<script>
+    function onkeyupfun(){
+        var x = document.getElementById("fname");
+        x.value = x.value.toUpperCase();
+    }
+
+    function confrm(){
+        var fname = document.getElementById("f1");
+        alert("hello"+fname.value);
+    }
+</script> 
+<p>Function to ttransfrom content to upper case</p>
+Enter Your name : <input id="fname" type="text" onkeyup=onkeyupfun() placeholder="name">
+<hr>
+
+<form onsumbit="confrm()" action="https://www.google.co.in/">
+    <p>To give alert message</p>
+    Enter your name : <input type="sumbit" id="f1">
+</form>
+
+
+</body>

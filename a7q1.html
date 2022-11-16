@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Asssignment 7</title>
+        <style>
+        	body{
+        	font-size:20px;
+        	}
+        </style>
+        <script>
+            function fun1(){
+                i=1;
+                pro=1;
+                a=document.getElementById("in1").value;
+                while(i<=a){
+                    pro=pro*i;
+                    i++;
+                }
+                document.getElementById("n1").innerHTML=pro;
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1>Asssignment 7 Question1</h1><br>
+
+        <div>The answer for factorial is : <span id="n1">answer</span><div><br>
+        <input type="text" id="in1" placeholder="num"><br><br>
+        <button onclick="fun1()">Factorial</button><br><br><hr><br>
+
+    </body>
+</html>

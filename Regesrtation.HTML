@@ -1,0 +1,175 @@
+<html>
+  <!--Page header-->
+  <head>
+    <title>Registeration</title>
+    <style>
+      body{
+      background-color: #FFA560;
+      }
+
+      h1{
+        color: lightcoral;
+        text-align: center;
+        font-size: 45;
+        font-family: 'Gill Sans';
+      }
+
+      p{
+        font-size: 26;
+      }
+
+      section{
+        margin: 10;
+      }
+      input.sumbit{
+        width: 30px;                                              
+      }
+    </style>
+  </head>
+  <!--Page body-->
+  <body>
+    <img src="https://d2e9h3gjmozu47.cloudfront.net/brand.png"  height="100">
+    <h1>Course Registeration Portal</h1><hr style="height:5px;background-color:gray">
+    <P><b>This is form registeration of higher semester for year 2022
+      <br>Please enter your information in the form given below.</b>
+    </P>
+
+    <form>
+      <!--Name form -->
+      <section>
+      <label for="name"><b>NAME : </b></label>
+      <input type="text" name="name"><br>
+      </section>
+
+      <!--DOB form-->
+      <section>
+        <label for="DOB"><b>DATE OF BIRTH : </b></label>
+        <input type="date" id="DOB" name="DOB"> 
+      </section>
+      
+      <!--USN form -->
+      <section>
+      <label for="usn"><b>USN : </b></label>
+      <input type="text" name="usn"><br>
+      </section>
+
+      
+      <!--Semester-->
+      <section name="Program">
+        <label for="Program"><b>PROGRAM : </b></label>
+        <select name="Program">
+          <option value="BE">BE</option>
+          <option value="BArch">BArch</option>
+          <option value="BCA">BCA</option>
+        </select>
+      </section>
+
+      <!--Semester-->
+      <section name="selector">
+      <label for="semester"><b>SEMESTER : </b></label>
+      <select name="semester">
+        <option value="1">I</option>
+        <option value="2">II</option>
+        <option value="3">III</option>
+        <OPtion value="4">IV</OPtion>
+        <option value="5">V</option>
+        <option value="6">VI</option>
+        <option value="7">VII</option>
+        <OPtion value="8">VIII</OPtion>
+      </select>
+      </section>
+      
+      <!--Course form-->
+      <section name="selector">
+      <label for="course"><b>COURSE : </b></label>
+      <select name="course">
+        <option value="CSE">CSE</option>
+        <option value="ISE">ISE</option>
+        <option value="ECE">ECE</option>
+        <option value="EEE">EEE</option>
+        <option value="ME">ME</option>
+        <option value="CV">CV</option>
+        <option value="EI">EI</option>
+        <option value="BT">BT</option>
+      </select>
+      </section>
+
+      <!--Address form-->
+      <section name="address">
+        <textarea name="address" id="address" cols="50" rows="10"></textarea>
+      </section>
+
+      <!--Course subjects-->
+      <table class="table" border="5">
+        <caption style="margin-top:15px; font-size:26;"><b>Subjects to be in tthis semester </b></caption>
+        <thead>
+          <tr>
+            <th class="header-label">No.</th>
+            <th class="header-label">Subject</th>
+            <th class="header-label">Course Credit</th>
+            <th class="header-label">Credit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1</th>
+            <th><input type="text"></th>
+            <th><input type=""></th>
+            <th><input type="string"></th>
+          </tr>
+          <tr>
+            <th>2</th>
+            <th><input type="text"></th>
+            <th><input type=""></th>
+            <th><input type="string"></th>
+          </tr>
+          <tr>
+            <th>3</th>
+            <th><input type="text"></th>
+            <th><input type=""></th>
+            <th><input type="string"></th>
+          </tr>
+          <tr>
+            <th>4</th>
+            <th><input type="text"></th>
+            <th><input type=""></th>
+            <th><input type="string"></th>
+          </tr>
+          <tr>
+            <th>5</th>
+            <th><input type="text"></th>
+            <th><input type=""></th>
+            <th><input type="string"></th>
+          </tr>
+          <tr>
+            <th>6</th>
+            <th><input type="text"></th>
+            <th><input type=""></th>
+            <th><input type="string"></th>
+          </tr>
+          <tr>
+            <th>7</th>
+            <th><input type="text"></th>
+            <th><input type=""></th>
+            <th><input type="string"></th>
+          </tr>
+          <tr>
+            <th>8</th>
+            <th><input type="text"></th>
+            <th><input type=""></th>
+            <th><input type="string"></th>
+          </tr>
+        </tbody>
+      </table>
+        
+      <!--Sumbit section-->
+      <section name="sumbitb">
+      <input type="submit" value="sumbit">
+      </section>
+    </form>
+  </body>
+</html>
+<!--
+create a form student registration at the beigning of semester
+name semester ter course no of subjects
+-->

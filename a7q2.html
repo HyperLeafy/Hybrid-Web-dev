@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Asssignment 7</title>
+        <script>
+            function fun(){
+                a=document.getElementById("in1").value;
+                b=document.getElementById("in2").value;
+                c=document.getElementById("in3").value;
+                d=document.getElementById("in4").value;
+                document.getElementById("1").innerHTML=a;
+                document.getElementById("2").innerHTML=b;
+                document.getElementById("3").innerHTML=c;
+                document.getElementById("4").innerHTML=d;
+            }
+        </script>
+        <style>
+        	h1{
+        	padding:0px;
+        	margin-bottom:0px;
+        	}
+        	body{
+        	font-size:20px;
+        	}
+        </style>
+    </head>
+    <body>
+        <h1>Asssignment 7 Question2 </h1><br>
+        <h3>Enter your details</h3>
+
+        <label for="in1"> Enter your name</label>
+        <input type="text" id="in1" placeholder="name"><br><br>
+
+        <label for="in2"> Enter your e-mail</label>
+        <input type="text" id="in2" placeholder="e-mail"><br><br>
+
+        <label for="in3"> Enter your number</label>
+        <input type="text" id="in3" placeholder="Number"><br><br>
+
+        <label for="in4"> Enter your age</label>
+        <input type="text" id="in4" placeholder="Age"><br><br>
+
+        <button onclick="fun()">Submit</button><br><hr><br>
+        <h2>Bio Data</h2><br>
+
+        <div> Name : <span id="1"></span></div><br>
+        <div> E-mail : <span id="2"></span></div><br>
+        <div> Contact Number : <span id="3"></span></div><br>
+        <div> Age : <span id="4"></span></div><br>
+        
+    </body>
+</html>

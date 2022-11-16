@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    color: white;
+}
+
+h1{
+    font-size: 3.2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.screen{
+    overflow: auto;
+    padding: 5px;
+}
+
+body{
+    font-family: monospace;
+    width: 100%;
+    background-image: url("./bg5.jpg");
+    line-height: 22px;
+    font-size: 1vw;
+}
+
+h2{
+    font-size: 3vw;
+}
+
+h2:hover{
+    text-decoration: underline;
+    color: olive;
+    transition: all 0.5s ease;
+}
+
+.container1{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.section2{
+    padding: 1px;
+}
+
+
+.menu{
+    float: left;
+    width: 15%;
+    height: 54vh;
+    padding: 5px;
+    padding-left: 2.5vw;
+    background-color: rgba(112, 121, 109, 0.747);
+    opacity: 40%;
+}
+
+.menuitem{
+    font-size: 1.5vw;
+    padding: 15px;
+}
+
+.menuitem:hover{
+    
+}
+.logItem{
+    width: 8vw;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border: 1px solid lightgreen;
+}
+
+.logItem:hover{
+    background-color: rgba(52, 105, 27, 0.747);
+    opacity: 90%;
+    font-size: larger;
+    width: 8.5vw;
+}
+
+.main{
+    float: left;
+    width: 75%;
+    padding: 5px;
+    box-shadow: 0 0 5px 0;
+    background: inherit;
+    backdrop-filter: blur(65px);
+    text-align: center;
+}
+
+.right{
+    float: left;
+    width: 10%;
+    padding: 5px;
+    background-color: blueviolet;
+}
+
+
+.container2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 5px;
+    padding: 5px;
+    justify-content: center ;
+}
+
+.container2 img{
+    width: 18vw;
+}
+
+.image3,.image2,.image1{
+    box-shadow: 0 0 5px 0;
+    background: inherit;
+    backdrop-filter: blur(5px);
+    text-align: center;
+}
+
+.image1:hover,.image2:hover,.image3:hover{
+    padding: 5px;
+    font-size: 1.1vw;
+    transition: all 0.2s ease;
+}
+
+
+.container3{
+    text-align: left;
+    padding: 15px;
+}
+textarea{
+    width: 30vw;
+    resize: vertical;
+}

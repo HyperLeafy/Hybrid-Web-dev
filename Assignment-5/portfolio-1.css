@@ -1,0 +1,77 @@
+/* global */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #344E5C;
+    color: #7A7C80;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+a{
+    color: #7A7C80;
+    text-decoration: none;
+}
+
+.section-3{
+    border: 2px solid #f5f8fa;
+}
+
+.section-3 h2{
+    font-size: 35px;
+    color: #4AB19D;
+}
+
+.section-3 h2:hover{
+    font-size: 40px;
+    text-decoration: underline;
+    color: #E17A47;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+
+.section-3 a{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+/* animations / utilities */
+
+.section-3 a:hover{
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+.center-text{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.pagination a{
+    cursor: pointer !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+    border: 2px solid #99999b ;
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 8px 16px;
+}
+
+.pagination a.active {
+    background-color:#918f8c;
+    border-radius:6px;
+}
+.pagination a:hover:not(.active) {
+    background-color: #5e5f5d;
+    border-radius:6px;
+    }
+    

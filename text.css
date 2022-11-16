@@ -1,0 +1,59 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+
+h1{
+    color: cyan;
+    text-align: center;
+    text-decoration: underline;
+    transition: all 0.2s ease;
+}
+
+h1:hover{
+    transform: translateY(4px);
+    text-decoration: none;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    color : darkcyan;
+    margin-bottom: 0px;
+}
+
+p{
+    line-height: 26px;  
+    margin-top: 0px;  
+}
+
+.address{
+    width: 300px;
+    margin-top: 15px;
+}
+
+table {
+    color: darkgray;
+    text-align: center;
+}
+
+tr{
+    text-align: center;
+
+}
+
+#heading{
+    color: rgb(63, 61, 61);
+    text-decoration: underline;
+    text-align: start;
+}
+
+ul{
+    list-style-type: square;
+    line-height: 25px;
+    margin-top: 0px;
+}
+
+#sublist{
+    list-style-type: circle;
+    color:saddlebrown;
+}

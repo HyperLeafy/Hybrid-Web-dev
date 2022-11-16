@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .menu{
+                float:left;
+                width:20%;
+                border: 2px solid black;
+            }
+
+            .main{
+                float:left;
+                width:60%;
+                padding:20px;
+                overflow:hidden;
+            }
+
+            .right{
+                float:right;
+                width:20%;
+                padding:20px;
+                background-color: fuchsia;
+            }
+
+            @media only screen and (max-width:800px){
+                /*for tablets*/
+                .main{
+                    width:80%;
+                    padding:20px;
+                }
+
+                .right{
+                    width:10%;
+                }
+
+                .menu{
+                    width: 10%;
+                }
+            }
+
+            @media only screen and (max-width:500px){
+                /*for mobile phone*/
+                .menu, .main, .right{
+                    width:100%;
+                }
+            }
+        </style>
+    </head>
+
+    <body style="font-family: Verdana;">
+        <div style="overflow: auto;">
+            <h2 style="font-size: 10vw;">Responsive Text</h2>
+            <div class="menu">
+                <div class="menuitem">Alpha</div>
+                <div class="menuitem">Beta</div>
+                <div class="menuitem">Gama</div>
+            </div>
+
+            <div class="main">
+                <h2>Alpha</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+                    Duis aute irure dolor in reprehenderit
+                </p>
+            </div>
+
+            <div class="right">
+                <h2>Right</h2>
+                <p>Right side of the main<br> right view</p>
+            </div>
+        </div>
+    </body>
+</html>

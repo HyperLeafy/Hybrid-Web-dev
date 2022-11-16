@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: aliceblue;
+            }
+
+            h2{
+                color: salmon;
+                font-family: monospace;
+                font-size: 28px;
+                text-decoration: underline;
+            }
+
+            form{
+                font-size: 18px;
+                padding: 5px;
+                border: 1px solid lightsalmon;
+            }
+
+            table,tr,th{
+                border: 1px solid salmon;
+                padding: 5px;
+                column-gap: 5px;
+            }
+
+            th{
+                background-color: rgba(240, 128, 128, 0.226);
+            }
+
+        </style>
+    </head>
+    <body>
+        <h2>Grocery Store</h2>
+        <p></p>
+        <form>
+            Enter product name : <input id="d1" type="text"><br>
+            Enter product price : <input id="d2" type="text"><br>
+            Enter quantity : <input id="d3" type="number"><br>
+            Enter product code: <input id="d4" type="text"><br>
+            <button type="button" id="add">Add</button>
+        </form>
+        <table id="table">
+            <tr>
+                <th>Name</th>
+                <th>Code</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total price</th>
+            </tr>
+        </table>
+        <button type="button" id="calc">Calculate</button>
+        <h3>The total sum : </h3>
+        <p id="result"></p>
+        <script src="scripts.js"></script>
+    </body>
+</html>

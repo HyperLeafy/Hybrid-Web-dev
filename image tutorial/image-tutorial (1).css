@@ -1,0 +1,128 @@
+img{
+    border: 2px solid rgb(196, 10, 57);
+    border-radius: 5px;
+    display: block;
+    transition: all 0.2s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img:hover{
+    border-radius: 5px;
+    border: 5px;
+    background-color: rgba(214, 134, 59, 0.747);
+    opacity: 90%;
+}
+
+
+
+.container{
+    position: relative;
+}
+
+.downleft{
+    position: absolute;
+    left: 15%;
+    top: 80%;
+    font-size: 34px;
+    color: azure;
+    transition: all 0.4s ease;
+}
+
+.downleft:hover{
+    transform: translateX(5px);
+}
+
+
+
+.container1{
+    position: relative;
+}
+
+.text-center{
+    position:absolute;
+    left: 45%;
+    top:85%;
+    color: aliceblue;
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+.container1:hover .text-center {
+    opacity: 1;
+  }
+
+
+
+.container2{
+    position: relative;
+}
+
+.upleft{
+    position:absolute;
+    right: 15%;
+    top: 5%;
+    color: rgb(196, 5, 78);
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+.container2:hover .upleft{
+    opacity: 1;
+  }
+
+
+
+span{
+    color: rgb(161, 29, 79);
+}
+
+span:hover{
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+P{
+    font-size: 24px;
+}
+
+p:hover{
+    text-decoration: underline;
+}
+
+
+.pagination {
+    display: inline-block;
+}
+  
+.pagination a {
+    border: 2px solid black;
+    margin-left: 5px;
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a:active{
+    background-color: gray;
+}
+
+.center-text{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.blur{filter: blur(2px);}
+.contrast{filter: contrast(40%);}
+.grayscale{filter: grayscale(70%);}
+
+
+.description{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    column-count: 3;
+    column-gap: 19px;
+    column-rule: 3px solid red;
+}
